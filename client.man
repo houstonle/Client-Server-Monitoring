@@ -1,0 +1,15 @@
+.TH CLIENT 1 "25 Nov 20"
+.SH NAME
+client - Run a client
+.SH SYNOPSIS
+client port ip-address [file]
+.SH DESCRIPTION
+Creates a client. Port is the port number that the server will read from and ip-address is the IP (Internet Protocol) address of the machine that is hosting the server. Client will read in a series of T<n> and S<n> commands. T<n> commands are sent to the server while S<n> commands cause the client to wait. These commands can be from a file or from keyboard input. The client will exit once EOF is seen.
+.SH EXAMPLES
+ ./client 10480 129.128.29.49 < input
+
+This will create a client process that sends its transactions to port 10480 for processing and recieves it commands from input.
+.SH AUTHOR
+Houston Le
+.SH "SEE ALSO"
+server(1)

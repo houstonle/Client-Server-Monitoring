@@ -1,0 +1,16 @@
+.TH SERVER 1 "25 Nov 20"
+.SH NAME
+server - Run a server
+.SH SYNOPSIS
+server port
+.SH DESCRIPTION
+Creates a server which listens for communications from clients. The port must be in the range 5000 to 64,000. The server will timeout after 30 seconds of inactivity
+.SH EXAMPLES
+ ./server 10480
+
+This will create a server that listens on port 10480 for messages from clients
+.SH AUTHOR
+Houston Le
+.SH "SEE ALSO"
+client(1)
+
